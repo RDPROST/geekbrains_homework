@@ -4,163 +4,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-family: 'Lato', sans-serif;
 }
 
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.fixed {
-
-    margin-top: 25px;
+.navigation {
+    padding: 17px calc(50% - 570px);
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
 }
 
-.fixed__section {
+.navigation__section {
     display: flex;
     align-items: center;
 }
 
-.logo {
+.navigation__link {
     text-decoration: none;
-    font-size: 27px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
+    color: #e8e8e8;
+    margin-left: 30px;
     display: flex;
-    align-items: center;
-    color: #222222;
 }
 
-.logo img {
-    padding-right: 13px;
-}
-
-.logo span {
-    font-weight: 900;
-    color: #f16d7f;
-    margin-right: 37px;
-}
-
-.browse-search {
-    width: 87px;
-    height: 38px;
-    background-color: #cdcdcc;
-    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
-    border: 1px solid #e6e6e6;
-    border-radius: 3px 0px 0px 3px;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-}
-
-.search {
-    width: 279px;
-    height: 38px;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #e6e6e6;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-    color: #a4a4a4;
-}
-
-.browse-search i {
-    color: #838383;
-}
-
-.click-search {
-    position: relative;
-    height: 38px;
-    width: 38px;
-    border: 1px solid #e6e6e6;
-    border-radius: 0px 3px 3px 0px;
-    background-color: #ffffff;
-    right: 1px;
-    font-weight: 400;
-    color: #a4a4a4;
-}
-
-.account {
-    width: 130px;
-    height: 38px;
-    background-color: #f16d7f;
-    border: none;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-    margin-left: 26px;
-}
-
-.navbar {
-    -webkit-box-shadow: 0px -1px 3px 0px rgba(230, 230, 230, 1);
-    -moz-box-shadow: 0px -1px 3px 0px rgba(230, 230, 230, 1);
-    box-shadow: 0px -1px 3px 0px rgba(230, 230, 230, 1);
-    padding: 20px 0;
-}
-
-.menu {
+.header {
+    background-color: #F1E4E6;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 764px;
 }
 
-.menu__link {
-    text-decoration: none;
+.header__section {
+    flex-basis: 50%;
+}
+
+.header__section img {
+    float: right;
+    width: 800px;
+}
+
+.header__content {
+
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    color: #222222;
+}
+
+.header__content h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.header__content p {
     font-weight: 700;
-    text-transform: uppercase;
-    color: #222222;
-
-    margin-right: 26px;
+    font-size: 32px;
 }
 
-.menu__link:last-child {
-    margin-right: 0;
+.header__content p span {
+    color: #F16D7F;
 }
 
-.slider {
-    width: 100%;
-    margin: 0 auto;
-    height: 665px;
-
-    background: url("../img/frame.jpg") center center no-repeat;
+.main {
+   
+    padding: 0px calc(50% - 570px);
+    margin-top: 65px;
+    margin-bottom: 60px;
 }
 
-.slider .container{
+.sale {
     display: flex;
+    flex-direction: column;
+}
+
+.sale__section{
+    display: flex;
+    justify-content: space-between
+}
+
+.sale__block{
+    position: relative;
+}
+
+.sale__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 99%;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: rgba(33, 22, 22, 0.7);
 }
 
-.slider-text{
-    margin-top: 254px;
-    border-left: 12px solid #f16d7f;
-    padding-left: 12px;
+.sentence{
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
 }
 
-.slider-text h1 {
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 0.025em;
-    color: #222222;
+.for{
+    font-weight: 700;
+    font-size: 24px;
+    color: #F16D7F;
 }
 
-.slider-text p {
-    font-weight: 900;
-    font-size: 40px;
-}
-
-.slider-text p span {
-    color: #f16d7f;
+.sale__banner{
+    margin-top: 30px;
+    position: relative;
 }
