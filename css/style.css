@@ -142,12 +142,13 @@ body {
 }
 
 .slider-text{
-    margin-top: 224px;
+    margin-top: 254px;
     border-left: 12px solid #f16d7f;
     padding-left: 12px;
 }
 
 .slider-text h1 {
+    font-weight: 900;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 900;
@@ -156,6 +157,7 @@ body {
 }
 
 .slider-text p {
+    font-weight: 900;
     font-size: 40px;
 }
 
