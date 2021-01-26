@@ -24,6 +24,7 @@ body {
 }
 
 .navigation {
+    min-width: 1140px;
     padding: 17px calc(50% - 570px);
     background-color: #222222;
     display: flex;
@@ -227,6 +228,7 @@ body {
 }
 
 .main {
+    min-width: 1140px;
     padding: 0px calc(50% - 570px);
     margin-top: 65px;
     margin-bottom: 60px;
@@ -394,6 +396,7 @@ body {
 }
 
 .feature {
+    min-width: 1140px;
     padding: 105px calc(50% - 570px);
     background: #222224;
     display: flex;
@@ -442,6 +445,7 @@ body {
 }
 
 .subscribe {
+    min-width: 1140px;
     height: 448px;
     padding: 0 calc(50% - 570px);
     background-image: linear-gradient(to top, rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url("../img/subscribe.jpg");
@@ -514,6 +518,7 @@ body {
 }
 
 .footer {
+    min-width: 1140px;
     display: flex;
     justify-content: space-between;
     background: #222224;
