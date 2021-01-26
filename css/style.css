@@ -168,6 +168,7 @@ body {
 }
 
 .cart {
+    margin-right: 10px;
     background: url("../img/cart.svg");
     height: 29px;
     width: 32px;
