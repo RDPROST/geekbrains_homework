@@ -427,12 +427,6 @@ body {
     font-weight: 300;
 }
 
-/*
-.subscribe__btn, .subscribe__text{
-    float: left;
-}
-*/
-
 .subscribe {
     display: flex;
     justify-content: space-between;
@@ -503,7 +497,7 @@ body {
     border-top-right-radius: 40px;
     background: #F16D7F;
     color: #fff;
-    width: 100px;
+    padding: 16px;
     font-size: 14px;
 }
 
