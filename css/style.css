@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 }
 
 .navigation {
@@ -91,7 +91,7 @@ body {
     transition: all 0.4s;
 }
 
-.menu__pade{
+.menu__pade {
     min-width: 1140px;
     position: absolute;
     width: 100%;
@@ -157,7 +157,7 @@ body {
     position: relative;
 }
 
-.cart::before{
+.cart::before {
     position: absolute;
     content: "5";
     color: white;
@@ -299,15 +299,15 @@ body {
     margin-bottom: 30px;
 }
 
-.products__img{
+.products__img {
     position: relative;
 }
 
-.products__img:hover .products__add{
+.products__img:hover .products__add {
     opacity: 1;
 }
 
-.products__add{
+.products__add {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -321,11 +321,11 @@ body {
     transition: all 0.4s;
 }
 
-.products__add-btn svg{
+.products__add-btn svg {
     margin-right: 10px;
 }
 
-.products__add-btn{
+.products__add-btn {
     width: 142px;
     height: 44px;
     background-color: transparent;
@@ -380,7 +380,7 @@ body {
     transition: all 0.4s;
 }
 
-.products__button-all:hover{
+.products__button-all:hover {
     background-color: #FF6A6A;
     color: #fff;
 }
@@ -537,4 +537,96 @@ body {
 .footer__soclink:hover {
     background-color: #F16D7F;
     color: #fff;
+}
+
+/*=============== Каталог ===============*/
+
+.header__catalog {
+    height: 148px;
+    justify-content: space-between;
+}
+
+.header__catalog .header__section {
+    flex-basis: auto;
+}
+
+.header__text {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F16D7F;
+}
+
+.header__directory span {
+    font-weight: 300;
+    color: #636363;
+    padding: 0 5px
+}
+
+.header__directory .active {
+    color: #F16D7F;
+    font-weight: 700;
+}
+
+.filter{
+    position: relative;
+    padding-bottom: 64px;
+}
+
+.filter__checkbox-input{
+    display: none;
+}
+
+.filter__checkbox-input:checked + .filter__btn + .filter__container{
+    opacity: 1;
+    transition: all 0.4s;
+    top: -26px;
+}
+
+.filter__btn{
+    padding-left: 16px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.filter__btn.active{
+    padding-left: 0;
+    color: #EF5B70;
+}
+
+.filter__container {
+
+    opacity: 0;
+    position: absolute;
+    z-index: 99;
+    top: -26px;
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 16px 16px 6px 16px;
+    transition: all 0.4s;
+}
+
+.filter__item{
+    text-transform: uppercase;
+    border-left: 5px solid #EF5B70;
+    padding-left: 10px;
+    color: #EF5B70;
+    line-height: 37px;
+    border-bottom: 1px solid #EBEBEb;
+    margin-bottom: 18px;
+}
+
+.filter__sublist{
+    padding: 7px 0 15px 15px;
+}
+
+.filter__item.active{
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.filter__subitem{
+    margin-bottom: 10px;
+    color: #6F6E6E;
 }
