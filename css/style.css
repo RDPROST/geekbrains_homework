@@ -333,11 +333,10 @@ main{
 
 .categories {
     padding-top: 65px;
-    padding-bottom: 96px;
+    padding-bottom: 66px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .categories-item {
@@ -354,6 +353,13 @@ main{
     background-position: center;
     background-size: 100%;
     transition: all 0.4s;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.categories-item:nth-child(3),
+.categories-item:nth-child(4){
+    margin-right: 0;
 }
 
 .categories-item:hover{
