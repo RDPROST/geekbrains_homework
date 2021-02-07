@@ -263,11 +263,12 @@ main {
 }
 
 .menu-container-title {
+    display: block;
     font-size: 14px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .menu-container-close {
@@ -325,6 +326,10 @@ main {
 .cart-btn svg {
     width: 32px;
     height: 29px;
+}
+
+.cart-btn svg path:nth-child(2){
+    fill: #F16D7F;
 }
 
 .cart-btn:hover svg {
@@ -564,6 +569,10 @@ main {
     color: #000000;
 }
 
+.products-item-hover-btn:active{
+    filter: brightness(80%);
+}
+
 .products-item-hover-btn:hover svg {
     fill: #000000;
 }
@@ -588,29 +597,51 @@ main {
     color: #ffffff;
 }
 
-.products-page-num {
+.products-btn:active{
+    filter: brightness(80%);
+}
+
+.products-page-pagination {
     display: inline-flex;
     height: 44px;
-
-    list-style-type: none;
     border: 1px solid #EBEBEB;
     margin: 20px auto 96px;
-
     border-radius: 5px;
 }
 
-.products-page-number {
+.products-page-pagination-item {
     color: #c4c4c4;
     padding: 10px 15px;
-
+    background-color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    text-decoration: none;
+    justify-content: center;
+    transition: all 0.4s;
 }
 
-.products-page-number-active {
+.products-page-pagination-item:hover{
+    background-color: #EF5B70;
+    color: white;
+}
+
+.products-page-pagination-item:active{
+    color: red;
+}
+.products-page-pagination-active {
     color: #EF5B70;
+}
+
+.products-page-pagination-arrow{
+    transition: all 0.4s;
+    border-radius: 5px;
+    border: none;
+}
+
+.products-page-pagination-arrow:hover{
+    background-color: #EBEBEB;
+    fill: black;
 }
 
 
@@ -816,6 +847,15 @@ main {
     text-decoration: none;
 }
 
+.page-header-link-h:hover{
+    filter: brightness(80%);
+}
+
+.page-header-link-h:active{
+    color: red;
+}
+
+
 .page-header-link-h::after {
     content: '/';
     padding: 0 5px;
@@ -945,6 +985,7 @@ main {
     display: none;
 }
 
+
 .filter-form-size:checked + .filter-form-link + .filter-size-block {
     display: flex;
 }
@@ -984,7 +1025,20 @@ main {
     justify-content: center;
     align-items: center;
     border: none;
+    transition: all 0.4s;
+}
 
+.slider-btn svg{
+    fill: black;
+    transition: all 0.4s;
+}
+
+.slider-btn:hover svg{
+    fill: #F16D7F;
+}
+
+.slider-btn:active{
+    filter: brightness(0);
 }
 
 .slider-content-block {
@@ -1320,6 +1374,7 @@ main {
     background-color: #F16D7F;
     color: #ffffff;
     border: 1px solid #F16D7F;
+    transition: all 0.4s;
 }
 
 .family-btn svg{
@@ -1330,6 +1385,10 @@ main {
 .family-btn:hover{
     background-color: transparent;
     color: #F16D7F;
+}
+
+.family-btn:active{
+    filter: brightness(80%);
 }
 
 .family-btn:hover svg{
