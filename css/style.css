@@ -1250,6 +1250,128 @@ main {
 
 /* ======= end cart ======= */
 
+/* ======= registration ======= */
+
+.registration{
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.registration{
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registration-form-title{
+    font-weight: 300;
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.registration-form-input{
+    width: 360px;
+    height: 45px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    border-radius: 0;
+}
+
+.family{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.family input{
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    margin-right: 10px;
+
+}
+
+.family label{
+    font-weight: 300;
+    font-size: 11px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.family-txt{
+    width: 360px;
+    color: #B1B1B1;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.family-btn{
+    margin-top: 40px;
+    width: 167px;
+    height: 50px;
+    background-color: #F16D7F;
+    color: #ffffff;
+    border: 1px solid #F16D7F;
+}
+
+.family-btn svg{
+    margin-left: 10px;
+    fill: #ffffff;
+}
+
+.family-btn:hover{
+    background-color: transparent;
+    color: #F16D7F;
+}
+
+.family-btn:hover svg{
+    fill: #F16D7F;
+}
+
+.registration-rules{
+    width: 652px;
+}
+
+.registration-rules-title{
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.registration-rules-txt{
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.registration-rules-list{
+    list-style-type: none;
+}
+
+.registration-rules-item{
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.registration-rules-item::before{
+    content: url("../img/rules.svg");
+    margin-right: 20px;
+}
+/* ======= end registration ======= */
+
 input:focus,
 input:active,
 button:focus {
