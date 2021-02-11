@@ -244,7 +244,7 @@ main {
 
 .page-header-input:checked + .menu-btn + .account-btn + .cart-btn + .menu-container {
     opacity: 1;
-    right: -230px;
+    
 }
 
 .menu-container {
@@ -255,7 +255,7 @@ main {
     height: 764px;
     width: 232px;
     top: 50px;
-    right: -462px;
+    right: -230px;
     z-index: 99;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     transition: all 0.4s;
