@@ -1,0 +1,150 @@
+.slider {
+  margin-bottom: 128px;
+
+  &-slide {
+    height: 777px;
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border: 1px solid #EAEAEA;
+
+    .container {
+      max-width: 1600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &-btn {
+      align-self: center;
+      width: 47px;
+      height: 47px;
+      background-color: rgba(42, 42, 42, 0.15);
+      border: none;
+      transition: all 0.4s;
+
+      &:hover svg {
+        fill: #F16D7F;
+      }
+
+      &:active {
+        background-color: rgba(42, 42, 42, 0.70);
+      }
+
+      svg {
+        fill: #000000;
+        transition: all 0.4s;
+      }
+    }
+  }
+
+  &-desc {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #EAEAEA;
+      min-height: 600px;
+      margin-top: -65px;
+      padding: 65px 250px;
+      position: relative;
+      z-index: 5;
+      background-color: #fff;
+      text-align: center;
+
+      .product-filter-sort {
+        margin-left: 0;
+        margin-bottom: 48px;
+      }
+    }
+
+    &-col {
+      color: #F16D7F;
+      text-transform: uppercase;
+      font: {
+        size: 14px;
+        weight: 300;
+      };
+
+      &::after {
+        content: "";
+        width: 63px;
+        height: 3px;
+        background-color: #EF5B70;
+        display: block;
+        margin: 12px auto;
+      }
+    }
+
+    &-name {
+      color: #4D4D4D;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      font: {
+        weight: 300;
+        size: 18px;
+      };
+    }
+
+    &-txt {
+      color: #5E5E5E;
+      margin-bottom: 32px;
+      font: {
+        weight: 300;
+        size: 14px;
+      };
+    }
+
+    &-price {
+      color: #EF5B70;
+      font: {
+        size: 24px;
+        weight: 300;
+      };
+
+      &::after {
+        content: "";
+        width: 640px;
+        height: 1px;
+        background-color: #EAEAEA;
+        display: block;
+        margin-top: 64px;
+        margin-bottom: 64px;
+      }
+    }
+
+    &-btn {
+      width: 212px;
+      height: 48px;
+      background-color: transparent;
+      border: 1px solid #FF6A6A;
+      color: #F26376;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s;
+
+      &:hover{
+        background-color: #FF6A6A;
+        color: #fff;
+
+        svg{
+          fill: #fff;
+        }
+      }
+
+      &:active{
+        filter: brightness(30%);
+      }
+
+      svg {
+        fill: #EF5B70;
+        margin-right: 20px;
+        transition: all 0.4s;
+      }
+    }
+
+
+  }
+
+}

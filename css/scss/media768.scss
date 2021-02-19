@@ -1,0 +1,179 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header {
+    .container {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+  }
+
+  .banner {
+    .container {
+      height: 368px;
+    }
+
+    &-img {
+      height: 368px;
+      background-position: 0 0;
+      padding-left: 55%;
+    }
+
+    &-title {
+      font: {
+        size: 44px;
+      };
+    }
+
+    &-subtitle {
+      font-size: 24px;
+    }
+  }
+
+  .offer {
+    padding-top: 20px;
+    padding-bottom: 154px;
+
+    &-item {
+      width: 232px;
+      height: 167px;
+
+      &:nth-child(4) {
+        margin-top: 20px;
+        height: 116px;
+      }
+    }
+  }
+
+  .product {
+    padding-bottom: 64px;
+
+    &-txt {
+      margin-bottom: 72px;
+    }
+
+    &-card {
+      margin-bottom: 16px;
+
+      &.hide-m {
+        display: none;
+      }
+    }
+
+    &-pagination {
+      margin-top: 24px;
+    }
+
+    &-filter {
+      width: 100%;
+      justify-content: space-between;
+
+      &-sort {
+        margin-left: 0;
+
+        &-label:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .feature {
+    padding-top: 0;
+    padding-bottom: 64px;
+
+    .container {
+      flex-direction: column;
+    }
+
+    &-card {
+      margin-top: 48px;
+    }
+  }
+
+  .subscribe {
+    .container {
+      padding-bottom: 140px;
+      padding-top: 64px;
+      flex-direction: column;
+      height: 614px;
+    }
+  }
+
+  .footer {
+    .container {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+  }
+
+  .slider {
+    &-slide {
+      height: 624px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &-img {
+        height: 565px;
+      }
+    }
+
+    &-desc {
+      .container {
+        padding: 65px 100px;
+      }
+    }
+  }
+
+  .cart {
+    padding-top: 60px;
+
+    .container {
+      flex-direction: column;
+    }
+
+    &-product {
+      width: 734px;
+    }
+
+    &-pay{
+      margin-top: 64px;
+
+      &-ship{
+        flex-direction: row;
+
+        &-grandtotal{
+          margin-bottom: 40px;
+        }
+
+        &-total{
+          margin-top: 38px;
+          margin-left: 15px;
+          width: 100%;
+          height: 214px;
+        }
+
+      }
+    }
+  }
+
+  .registration{
+    &-rules{
+      width: 355px;
+      &-title,
+      &-txt,
+      &-item{
+        font-size: 16px;
+      }
+    }
+  }
+}

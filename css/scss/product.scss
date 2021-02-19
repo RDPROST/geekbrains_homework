@@ -1,0 +1,254 @@
+.product {
+  background-color: #fff;
+  padding-bottom: 96px;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &-content{
+    margin: 0 auto ;
+    text-align: center;
+  }
+
+  &-title {
+    font: {
+      size: 30px;
+    }
+    color: #222222;
+  }
+
+  &-txt {
+    font: {
+      size: 14px;
+    }
+    color: #9F9F9F;
+    margin-bottom: 48px;
+  }
+
+  &-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    width: 360px;
+    margin-bottom: 30px;
+    position: relative;
+
+    img {
+      display: block;
+    }
+
+    &-content {
+      background-color: #F8F8F8;
+      padding: 20px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-name {
+      text-transform: uppercase;
+      font: {
+        size: 14px;
+      }
+      color: #000000;
+    }
+
+    &-desc {
+      font: {
+        size: 14px;
+        weight: 300;
+      }
+      color: #5D5D5D;
+    }
+
+    &-price {
+      font: {
+        size: 16px;
+      }
+      color: #F16D7F;
+    }
+
+    &-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 420px;
+      background-color: rgba(58, 56, 56, 0.86);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.4s;
+
+      &:hover{
+        opacity: 1;
+      }
+
+      &-btn {
+        width: 140px;
+        height: 44px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
+        font: {
+          size: 14px;
+        };
+
+        &:hover{
+          background-color: #fff;
+          color: #000000;
+
+          svg{
+            fill: #000000;
+          }
+        }
+
+        &:active{
+          filter: brightness(30%);
+        }
+
+        svg{
+          fill: #fff;
+          margin-right: 10px;
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+
+  &-btn {
+    width: 212px;
+    height: 48px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    margin: 18px auto 0 auto;
+    font: {
+      size: 16px;
+    }
+    background-color: transparent;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: #FF6A6A;
+      color: #fff;
+    }
+
+    &:active {
+      filter: brightness(30%);
+    }
+  }
+
+  &-filter{
+    display: flex;
+    height: 132px;
+    align-items: center;
+
+    &-all{
+      &-input{
+        display: none;
+      }
+
+      &-label{
+        text-transform: uppercase;
+        color: #000000;
+        font: {
+          size: 14px;
+          weight: 600;
+        };
+
+        svg{
+          margin-left: 11px;
+        }
+      }
+    }
+
+    &-sort{
+      margin-left: 320px;
+
+      &-input{
+        display: none;
+      }
+
+      &-label{
+        text-transform: uppercase;
+        color: #6F6E6E;
+        margin-right: 30px;
+        font: {
+          size: 14px;
+        };
+        &::after{
+          content: url("../img/down.svg");
+          margin-left: 10px;
+        }
+
+      }
+    }
+  }
+
+  &-pagination{
+    margin: 18px auto 0 auto;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px ;
+
+    &-link{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #C4C4C4;
+      transition: all 0.4s;
+
+      &:hover{
+        background-color: #C4C4C4;
+        color: #fff;
+      }
+
+      &:active{
+        filter: brightness(30%);
+      }
+
+      &.active{
+        color: #EF5B70;
+      }
+
+      &.arrow{
+        border-radius: 5px 0 0 5px;
+        border: none;
+        background-color: #fff;
+
+        &:hover{
+          background-color: orange;
+        }
+
+        &:active{
+          background-color: red;;
+        }
+
+        &:nth-last-child(1){
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+}

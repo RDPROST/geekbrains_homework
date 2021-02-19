@@ -1,0 +1,21 @@
+.header {
+  background-color: #222222;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+}
+.header-wrp {
+  display: flex;
+  align-items: flex-end;
+}
+.header-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-left: 40px;
+}
+
+/*# sourceMappingURL=header.css.map */
