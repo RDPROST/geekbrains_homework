@@ -1192,6 +1192,9 @@
   .slider-desc .container {
     padding: 65px 100px;
   }
+  .slider-desc-price::after {
+    width: 175px;
+  }
 
   .cart {
     padding-top: 60px;
@@ -1201,6 +1204,9 @@
   }
   .cart-product {
     width: 734px;
+  }
+  .cart-product-content-item .number {
+    text-align: center;
   }
   .cart-pay {
     margin-top: 64px;
@@ -1326,12 +1332,73 @@
   .slider-desc .container {
     padding: 64px 25px;
   }
+  .slider-desc-price::after {
+    width: 175px;
+  }
 
   .footer .container {
     flex-direction: column-reverse;
     height: 140px;
     padding-top: 40px;
     padding-bottom: 10px;
+  }
+
+  .cart-product {
+    width: 100%;
+    height: 188px;
+  }
+  .cart-product img {
+    height: 188px;
+  }
+  .cart-product-close {
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+  .cart-product-content {
+    padding: 20px;
+  }
+  .cart-product-content-name {
+    font-size: 16px;
+  }
+  .cart-product-content-list {
+    margin-top: 25px;
+  }
+  .cart-product-content-item {
+    font-size: 14px;
+  }
+  .cart-product-content-item .number {
+    width: 24px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .cart-product-btns {
+    width: 100%;
+    margin-top: 0;
+  }
+  .cart-product-btns-btn {
+    font-size: 12px;
+    height: 33px;
+  }
+  .cart-pay-ship {
+    flex-direction: column;
+  }
+  .cart-pay-ship-total {
+    margin-left: 0;
+  }
+  .cart-pay-ship-input {
+    width: 100%;
+  }
+
+  .registration .container {
+    flex-direction: column;
+  }
+  .registration-forms {
+    width: 100%;
+  }
+  .registration-rules {
+    width: 100%;
+    margin-top: 40px;
   }
 }
 

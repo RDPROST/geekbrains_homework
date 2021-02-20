@@ -131,6 +131,12 @@
       .container {
         padding: 65px 100px;
       }
+      &-price{
+        &::after {
+          width: 175px;
+        }
+      }
+
     }
   }
 
@@ -143,6 +149,15 @@
 
     &-product {
       width: 734px;
+
+      &-content{
+        &-item{
+          .number{
+            text-align: center;
+          }
+        }
+
+      }
     }
 
     &-pay{
