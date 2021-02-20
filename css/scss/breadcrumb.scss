@@ -1,0 +1,53 @@
+.breadcrumb {
+  background-color: #F8F3F4;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    color: #F16D7F;
+    font: {
+      size: 24px;
+    };
+  }
+
+  &-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #636363;
+    font: {
+      weight: 300;
+      size: 14px;
+    };
+    transition: all 0.4s;
+
+    &:hover{
+      color: orange;
+    }
+
+    &:active{
+      color: red;
+    }
+
+    &.active{
+      color: #F16D7F;
+      font: {
+        weight: 700;
+      };
+
+      &::after{
+        content: "";
+      }
+    }
+
+    &::after{
+      content: "/";
+      margin:0 5px;
+    }
+  }
+}

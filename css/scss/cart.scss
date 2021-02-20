@@ -1,0 +1,242 @@
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-product {
+    display: flex;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    width: 650px;
+    height: 306px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 40px;
+
+    &-close{
+      color: #575757;
+      font: {
+        size: 30px;
+      };
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      border: none;
+      background-color: transparent;
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover{
+        color: orange;
+      }
+
+      &:active{
+        color: red;
+      }
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    &-content {
+      padding: 30px;
+
+      &-name {
+        color: #222222;
+        text-transform: uppercase;
+        font: {
+          size: 24px;
+        };
+      }
+
+      &-list {
+        margin-top: 40px;
+        list-style-type: none;
+      }
+
+      &-item {
+        color: #575757;
+        margin-bottom: 5px;
+        font: {
+          size: 22px;
+        };
+
+        .price {
+          color: #EF5B70;
+        }
+
+        .color{
+          color: #6F6E6E;
+        }
+
+        .size{
+          color: #6F6E6E;
+        }
+
+        .number{
+          margin-left: 25px;
+          width: 44px;
+          height: 25px;
+          text-align: right;
+          border: 1px solid #EAEAEA;
+          color: #656565;
+          font: {
+            size: 18px;
+          };
+        }
+      }
+    }
+
+    &-btns{
+      margin-top: 30px;
+      width: 650px;
+      display: flex;
+      justify-content: space-between;
+
+      &-btn{
+        text-transform: uppercase;
+        color: #000000;
+        background-color: #fff;
+        border: 1px solid #A4A4A4;
+        height: 49px;
+        font: {
+          size: 14px;
+          weight: 300;
+        };
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &:hover{
+          background-color: #A4A4A4;
+          color: #fff;
+        }
+
+        &:active{
+          filter: brightness(30%);
+        }
+      }
+    }
+  }
+
+  &-pay{
+
+    &-ship{
+      display: flex;
+      flex-direction: column;
+
+      &.cart-pay-ships{
+        flex-direction: column;
+      }
+
+      &-title{
+        text-transform: uppercase;
+        color: #222222;
+        font: {
+          weight: 300;
+          size: 16px;
+        };
+      }
+
+      &-input{
+        margin-top: 20px;
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        padding-left: 20px;
+      }
+
+      &-btn{
+        font-size: 11px;
+        margin-top: 25px;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #A4A4A4;
+        height: 34px;
+        width: 100px;
+        background-color: transparent;
+        transition: all 0.4s;
+
+        &:hover{
+          background-color: #A4A4A4;
+          color: #fff;
+        }
+
+        &:active{
+          filter: brightness(30%);
+        }
+      }
+
+      &-total{
+        margin-top: 60px;
+        background: #F5F3F3;
+        padding: 40px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+
+      &-subtotal{
+        color: #4A4A4A;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font: {
+          size: 11px;
+        };
+
+        span{
+          margin-left: 20px;
+        }
+      }
+
+      &-grandtotal{
+        text-transform: uppercase;
+        color: #222222;
+        position: relative;
+        margin-bottom: 50px;
+        font: {
+          weight: 300;
+          size: 16px;
+        };
+
+        span{
+          color: #F16D7F;
+          margin-left: 20px;
+          font: {
+            weight: 700;
+          };
+        }
+      }
+
+      &-submit{
+        background-color: #F16D7F;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        border: 1px solid #F16D7F;
+        transition: all 0.4s;
+        font-size: 16px;
+
+        &:hover{
+          background-color: transparent;
+          color: #000000;
+        }
+
+        &:active{
+          filter: brightness(30%);
+        }
+      }
+    }
+  }
+}

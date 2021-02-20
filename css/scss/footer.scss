@@ -1,0 +1,44 @@
+.footer {
+  background: #222224;
+
+  .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-copy {
+    font: {
+      size: 16px;
+    };
+    color: #FBFBFB;
+  }
+
+  &-soclinks {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-soclink {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+
+    &:hover {
+      background: #F16D7F;
+      color: #fff;
+    }
+
+    &:active {
+      filter: brightness(30%);
+    }
+  }
+}

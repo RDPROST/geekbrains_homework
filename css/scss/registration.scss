@@ -1,0 +1,131 @@
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-forms {
+    width: 360px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font: {
+        weight: 300;
+        size: 16px;
+      };
+    }
+
+    &-input {
+      margin-top: 20px;
+      height: 45px;
+      padding-left: 20px;
+      border: 1px solid #A4A4A4;
+    }
+
+    &-family {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        margin-right: 10px;
+      }
+
+      label {
+        margin-right: 20px;
+        font: {
+          weight: 300;
+          size: 11px;
+        };
+      }
+    }
+
+    &-txt {
+      margin-top: 15px;
+      margin-bottom: 40px;
+      color: #B1B1B1;
+      font: {
+        size: 13px;
+        weight: 300;
+      };
+    }
+
+    &-btn {
+      background-color: #F16D7F;
+      border: 1px solid #F16D7F;
+      width: 167px;
+      height: 50px;
+      color: #fff;
+      transition: all 0.4s;
+
+      svg {
+        margin-left: 20px;
+        fill: #fff;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        color: #000000;
+        background-color: #fff;
+      }
+
+      &:hover svg {
+        fill: #000;
+      }
+
+      &:active {
+        filter: brightness(30%);
+      }
+    }
+  }
+
+  &-rules {
+    width: 650px;
+
+    &-title {
+      color: #000000;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font: {
+        size: 24px;
+        weight: 300;
+      };
+    }
+
+    &-txt{
+      color: #000000;
+      margin-bottom: 20px;
+      font: {
+        size: 24px;
+        weight: 300;
+      };
+    }
+
+    &-list{
+      list-style-type: none;
+    }
+
+    &-item{
+      font-weight: 300;
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 15px;
+
+      &::before{
+        content: url("../img/rules.svg");
+        margin-right: 20px;
+      }
+    }
+  }
+}

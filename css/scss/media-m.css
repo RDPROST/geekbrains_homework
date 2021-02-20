@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .container {
+    max-width: 768px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+/*# sourceMappingURL=media-m.css.map */
