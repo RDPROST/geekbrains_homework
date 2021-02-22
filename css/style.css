@@ -196,11 +196,11 @@
   justify-content: center;
   padding-left: 60%;
   flex-direction: column;
-  text-transform: uppercase;
   color: #222222;
 }
 .banner-title {
   position: relative;
+  text-transform: uppercase;
   font-size: 48px;
   font-weight: 900;
 }
@@ -214,6 +214,7 @@
   top: 5px;
 }
 .banner-subtitle {
+  text-transform: uppercase;
   font-size: 32px;
   font-weight: 700;
 }
@@ -233,7 +234,7 @@
   flex-wrap: wrap;
 }
 .offer-item {
-  width: 360px;
+  width: 32%;
   height: 260px;
   display: flex;
   justify-content: center;
@@ -303,13 +304,17 @@
 .product-cards {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .product-card {
   width: 360px;
   margin-bottom: 30px;
   position: relative;
+  margin-right: 30px;
+}
+.product-card:nth-child(3n) {
+  margin-right: 0;
 }
 .product-card img {
   display: block;
@@ -496,15 +501,9 @@
 .feature-card .feature-img {
   height: 40px;
   width: 50px;
-  background-image: url("../img/delivery.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
-.feature-card:nth-child(2) .feature-img {
-  background-image: url("../img/sales.svg");
-}
-.feature-card:nth-child(3) .feature-img {
-  background-image: url("../img/quality.svg");
+.feature-card .feature-img svg {
+  fill: #F16D7F;
 }
 .feature-title {
   font-size: 20px;
@@ -1088,6 +1087,11 @@
   margin-right: 20px;
 }
 
+@media (max-width: 1139px) {
+  .product-card:nth-child(3n) {
+    margin-right: 30px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 768px;
@@ -1120,7 +1124,6 @@
     padding-bottom: 154px;
   }
   .offer-item {
-    width: 232px;
     height: 167px;
   }
   .offer-item:nth-child(4) {
@@ -1136,6 +1139,13 @@
   }
   .product-card {
     margin-bottom: 16px;
+    margin-right: 16px;
+  }
+  .product-card:nth-child(3n) {
+    margin-right: 16px;
+  }
+  .product-card:nth-child(2n) {
+    margin-right: 0;
   }
   .product-card.hide-m {
     display: none;
@@ -1272,6 +1282,7 @@
   }
   .offer-item {
     width: 100%;
+    min-width: 330px;
     height: 320px;
     margin-bottom: 32px;
   }
@@ -1291,6 +1302,10 @@
   }
   .product-card {
     margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .product-card:nth-child(3n), .product-card:nth-child(2n) {
+    margin-right: 0;
   }
   .product-card.hide-m {
     display: block;

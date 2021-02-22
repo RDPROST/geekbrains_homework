@@ -32,7 +32,7 @@
   &-cards {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -40,6 +40,11 @@
     width: 360px;
     margin-bottom: 30px;
     position: relative;
+    margin-right: 30px;
+
+    &:nth-child(3n){
+      margin-right: 0;
+    }
 
     img {
       display: block;
