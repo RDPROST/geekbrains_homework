@@ -188,7 +188,7 @@
 .banner-img {
   background-image: url("../img/bg.png");
   background-size: contain;
-  height: 764px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: -200px 0;
@@ -1108,7 +1108,7 @@
     height: 368px;
   }
   .banner-img {
-    height: 368px;
+    height: 100%;
     background-position: 0 0;
     padding-left: 55%;
   }
@@ -1213,7 +1213,7 @@
     flex-direction: column;
   }
   .cart-product {
-    width: 734px;
+    width: 100%;
   }
   .cart-product-content-item .number {
     text-align: center;
@@ -1342,7 +1342,8 @@
     padding-left: 0;
   }
   .slider-slide-img {
-    height: 454px;
+    width: 75%;
+    height: 100%;
   }
   .slider-desc .container {
     padding: 64px 25px;
