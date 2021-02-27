@@ -1,3 +1,16 @@
+@media (max-width: 1139px){
+  .product{
+    &-card{
+
+
+      &:nth-child(3n){
+        margin-right: 30px;
+      }
+
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 768px;
@@ -18,7 +31,7 @@
     }
 
     &-img {
-      height: 368px;
+      height: 100%;
       background-position: 0 0;
       padding-left: 55%;
     }
@@ -39,7 +52,6 @@
     padding-bottom: 154px;
 
     &-item {
-      width: 232px;
       height: 167px;
 
       &:nth-child(4) {
@@ -58,6 +70,15 @@
 
     &-card {
       margin-bottom: 16px;
+      margin-right: 16px;
+
+      &:nth-child(3n){
+        margin-right: 16px;
+      }
+
+      &:nth-child(2n){
+        margin-right: 0;
+      }
 
       &.hide-m {
         display: none;
@@ -148,7 +169,7 @@
     }
 
     &-product {
-      width: 734px;
+      width: 100%;
 
       &-content{
         &-item{

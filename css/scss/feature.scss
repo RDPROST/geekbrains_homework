@@ -21,17 +21,10 @@
     .feature-img {
       height: 40px;
       width: 50px;
-      background-image: url("../img/delivery.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
 
-    &:nth-child(2) .feature-img {
-      background-image: url("../img/sales.svg");
-    }
-
-    &:nth-child(3) .feature-img {
-      background-image: url("../img/quality.svg");
+      svg{
+        fill: #F16D7F;
+      }
     }
   }
 
